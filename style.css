@@ -1,0 +1,282 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url(assets/fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url(assets/fonts/Montserrat/static/Montserrat-Medium.ttf);
+}
+
+
+@font-face {
+    font-family: 'Fraunces_72pt_Soft-Bold';
+    src: url(assets/fonts/Fraunces/static/Fraunces_72pt-Bold.ttf);
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body{
+    height: 100dvh;
+    background-color: #f3eae3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    width: 550px;
+    max-width: 90%;
+    background-color:white;
+    border-radius: 10px;
+    height: auto;
+}
+
+.chanelPerfume{
+    width: 50%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.perfume{
+    font-family: 'Montserrat-Regular';
+    letter-spacing: 0.3em;
+    margin-left: 15%;
+    margin-top: 7%;
+    font-size: 0.8em;
+    color: #7e7e80;
+}
+
+h1{
+    font-family: 'Fraunces_72pt_Soft-Bold';
+    color: #1b1b1b;
+    font-weight: bold;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    line-height: 32px;
+}
+
+.description{
+    font-family: 'Montserrat-Medium';
+    margin-left: 15%;
+    font-size: 0.8em;
+    color: #7e7e80;
+    width: 70%;
+    line-height: 20px;
+}
+
+h2{
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+    margin-top: 7%;
+    gap: 10px;
+}
+
+.actualPrice{
+    color: #3a8167;
+    font-family: 'Fraunces_72pt_Soft-Bold';
+    font-size: 1.2em;
+}
+
+.oldPrice{
+    font-family: 'Montserrat-Regular';
+    color: #7e7e80;
+    font-size: 0.5em;
+}
+
+button{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 7%;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3d8168;
+    color: white;
+    font-family: 'Montserrat-Medium';
+}
+
+button:hover{
+    background-color: #1a4031;
+}
+
+@media (max-width: 450px) {
+body{
+    height: 100dvh;
+}
+
+main {
+    flex-direction: column;
+    width: 85%;
+    overflow: hidden;
+  }
+
+.chanelPerfume {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-bottom-left-radius: 0px; 
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+    content: url("images/image-product-mobile.jpg");
+  }
+
+.perfume{
+    width: 100%;
+    margin-left: 15%;
+    margin-top: 15px;
+    font-size: 0.8em;
+}
+
+h1{
+    width: 60%;
+    margin-left: 15%;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    line-height: 30px;
+    font-size: 1.4rem;
+}
+
+.description{
+    font-size: 0.8em;
+    line-height: 20px;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 2%;
+}
+
+h2{
+    gap: 10px;
+    width: 100%;
+    margin-left: 15%;
+    margin-top: 2%;
+}
+
+.actualPrice{
+    font-size: 1em;
+}
+
+.oldPrice{
+    font-family: 'Montserrat-Regular';
+    color: #7e7e80;
+    font-size: 0.5em;
+}
+
+button{
+    width: 70%;
+    margin-left: 15%;
+    margin-top:5%;
+    margin-bottom: 5%;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+}
+
+@media (max-width: 320px) {
+body{
+    height: 100dvh;
+}
+
+main {
+    flex-direction: column;
+    width: 90%;
+    overflow: hidden;
+    height: 95%;
+  }
+
+.chanelPerfume {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    object-position: center;
+    border-bottom-left-radius: 0px; 
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+    content: url("images/image-product-mobile.jpg");
+  }
+
+.perfume{
+    width: 100%;
+    margin-left: 15%;
+    margin-top: 10px;
+    font-size: 0.6em;
+}
+
+h1{
+    width: 60%;
+    margin-left: 15%;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    line-height: 25px;
+    font-size: 1.2rem;
+}
+
+.description{
+    font-size: 0.6em;
+    line-height: 20px;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 2%;
+}
+
+h2{
+    gap: 10px;
+    width: 100%;
+    margin-left: 15%;
+    margin-top: 1%;
+}
+
+.actualPrice{
+    font-size: 0.7em;
+}
+
+.oldPrice{
+    font-family: 'Montserrat-Regular';
+    color: #7e7e80;
+    font-size: 0.3em;
+}
+
+button{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    padding-bottom: 9px;
+    padding-top: 9px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
