@@ -13,7 +13,7 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 ## 🔗 Links
 
-- **Solution URL:** [](#)
+- **Solution URL:** [https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa?tab=report](#)
 - **Live Site URL:** [](#)
 
 ---
